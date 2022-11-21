@@ -1,0 +1,156 @@
+body{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    background-color:#6C3483;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 0.7px;
+    margin: 60px;
+    background-color: white;
+    border-radius: 30px;
+    max-width: 1250px;
+    width: 100%;
+    font-size:13px;
+    box-shadow:
+     2.8px 2.8px 2.2px rgba(0, 0, 0, 0.081),
+     6.7px 6.7px 5.3px rgba(0, 0, 0, 0.09),
+     12.5px 12.5px 10px rgba(0, 0, 0, 0.09),
+     22.3px 22.3px 17.9px rgba(0, 0, 0, 0.084),
+     41.8px 41.8px 33.4px rgba(0, 0, 0, 0.08),
+     100px 100px 80px rgba(0, 0, 0, 0.09);
+}
+.coin-price{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:inherit;
+    margin: 1.0rem;
+    font-size: 10px;
+    position: relative;
+}
+.enter{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 30px;
+    border-radius: 30px;
+}
+.enter input{
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+.coins{
+    position: relative;
+    max-width:  380px;
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 15px;
+    font-weight: 800;
+    flex-direction: row;
+}
+.calculator{
+    position: relative;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column ;
+    font-size: 15px;
+    font-weight: 500;
+    color: black;
+    border-radius: 10px;
+    background-color: white;
+    max-width: 300px;
+    width: 100%;
+    box-shadow:
+     2.8px 2.8px 2.2px rgba(0, 0, 0, 0.081),
+     6.7px 6.7px 5.3px rgba(0, 0, 0, 0.09),
+     12.5px 12.5px 10px rgba(0, 0, 0, 0.09),
+     22.3px 22.3px 17.9px rgba(0, 0, 0, 0.084),
+     41.8px 41.8px 33.4px rgba(0, 0, 0, 0.08),
+     100px 100px 80px rgba(0, 0, 0, 0.09);
+}
+.hidden{
+    display: hidden;
+}
+.display{
+    position: relative;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 20px;
+    font-weight: bold;
+}
+.coin-radio{
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+    z-index: -1;
+}
+.rad-design {
+    width: 10px;
+    height: 10px;
+    border-radius: 100px;
+    position: relative;
+}
+.rad-label {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    cursor: pointer;
+    transition: .5s;
+}
+.rad-label:hover,
+.rad-label:focus-within {
+  background: rgba(0, 0, 0, 0.14);
+}
+.rad-design::before {
+    content: '';
+    display: inherit;
+    width: inherit;
+    height: inherit;
+    border-radius: inherit;
+    background: hsl(0, 0%, 90%);
+    transform: scale(1.1);
+    transition: .3s;
+  }
+.coin-radio:checked+.rad-design::before {
+    transform: scale(0);
+}
+.rad-text {
+    color: hsl(0, 5%, 81%);
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 800;
+    transition: .3s;
+}
+.rad-text:checked{
+    color: black;
+}
+.submit{
+    cursor: pointer;
+    background-color: #f5d0fe;
+    color: black;
+    border-radius: 7px;
+    border-color: #f5d0fe ;
+    
+}
+.submit:hover{
+    background-color: #6366f1;
+    border-color:#6366f1 ;
+    color: white    ;
+    transition: .3s;
+}
+
